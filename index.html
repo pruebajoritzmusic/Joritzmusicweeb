@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joritz Music | Official Site</title>
+    <style>
+        :root {
+            --bg-color: #0d0d0d;
+            --accent-color: #a855f7; /* Violeta/Alternativo */
+            --text-color: #e2e8f0;
+            --secondary-text: #94a3b8;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1514525253361-b83f859b73c0?auto=format&fit=crop&q=80&w=1000') no-repeat center/cover;
+        }
+
+        h1 {
+            font-size: 4rem;
+            letter-spacing: 10px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--accent-color);
+            font-weight: 300;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        section {
+            margin-bottom: 80px;
+        }
+
+        h2 {
+            border-bottom: 1px solid var(--accent-color);
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-bottom: 30px;
+        }
+
+        /* Música Grid */
+        .music-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .album-card {
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .album-card:hover {
+            transform: translateY(-5px);
+            border: 1px solid var(--accent-color);
+        }
+
+        .album-card img {
+            width: 100%;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+
+        /* Lista de canciones */
+        .song-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .song-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #333;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .song-list li:hover {
+            color: var(--accent-color);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.9rem;
+            color: var(--secondary-text);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            border: 1px solid var(--accent-color);
+            color: var(--accent-color);
+            text-decoration: none;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: var(--accent-color);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>JORITZ</h1>
+        <p class="subtitle">Downtempo & Alternative Pop Artist</p>
+        <a href="#music" class="btn">ESCUCHAR AHORA</a>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>SOBRE EL ARTISTA</h2>
+            <p>
+                Joritz es un artista alternativo que explora los sonidos del <strong>Downtempo</strong> y el pop experimental. 
+                Inspirado por figuras como Melanie Martinez y Aurora, Joritz prefiere la intimidad de su propio estudio 
+                casero para crear atmósferas envolventes y letras introspectivas.
+            </p>
+            <p>Originario de Gipuzkoa, su música mezcla lo electrónico con lo emocional.</p>
+        </section>
+
+        <section id="music">
+            <h2>DISCOGRAFÍA</h2>
+            <div class="music-grid">
+                <div class="album-card">
+                    <h3>Love Illusion (EP)</h3>
+                    <p>2020 • Electronic/Alt</p>
+                    <a href="#" class="btn">Ver EP</a>
+                </div>
+                <div class="album-card">
+                    <h3>Next Level</h3>
+                    <p>Single</p>
+                    <a href="#" class="btn">Escuchar</a>
+                </div>
+                <div class="album-card">
+                    <h3>Welcome to WMF</h3>
+                    <p>Single</p>
+                    <a href="#" class="btn">Escuchar</a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>CANCIONES DESTACADAS</h2>
+            <ul class="song-list">
+                <li><span>Next Level</span> <span>01:01</span></li>
+                <li><span>Ink and Paper</span> <span>02:15</span></li>
+                <li><span>Sexuality (Interlude)</span> <span>01:02</span></li>
+                <li><span>Space</span> <span>02:35</span></li>
+                <li><span>Fucking Balloons (Intro)</span> <span>00:43</span></li>
+                <li><span>Holy Bible</span> <span>01:02</span></li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 JORITZ MUSIC. Hecho con pasión por lo alternativo.</p>
+        <p>Disponible en Spotify, Apple Music y Deezer.</p>
+    </footer>
+
+</body>
+</html>
